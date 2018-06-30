@@ -63,11 +63,11 @@
    <script>
             var NebPay = require("nebpay");
             var nebPay = new NebPay();
-            var dappAddress = "n1o61LwrN3kKrm7X4M6Xix4RJcubQ6Qbpyx";
+            var dappAddress = "n1iGG6GNjNg8iyuD5k2v4yyunuc3Xqm2iva";
             var nebulas = require("nebulas"),
                 Account = nebulas.Account,
                 neb = new nebulas.Neb();
-            neb.setRequest(new nebulas.HttpRequest("https://testnet.nebulas.io"));
+            neb.setRequest(new nebulas.HttpRequest("https://mainnet.nebulas.io"));
             $(document).ready(function () {
                 shows();
             });
@@ -153,7 +153,7 @@
             $("#iptUp").attr("ddisabled", true);
             var cid = $("#s").find("option:selected").val();
             var cname = $("#s").find("option:selected").text();
-            var to = 'n1o61LwrN3kKrm7X4M6Xix4RJcubQ6Qbpyx';
+            var to = 'n1iGG6GNjNg8iyuD5k2v4yyunuc3Xqm2iva';
             var value = "0";
             var callFunction = "saveDepartment";
             var callArgs = "[\"" + id + "\",\"" +
